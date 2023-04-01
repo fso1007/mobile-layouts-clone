@@ -1,0 +1,36 @@
+.menu {
+  padding: 47px 12px 10px 12px;
+  position: sticky;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+
+    &__icon {
+      width: 17px;
+    }
+
+    &__title {
+      line-height: 2;
+      margin-top: 8px;
+      font-size: 0.8rem;
+    }
+  }
+ 
+}
+
+.active {
+  opacity: 1;
+  color: white;
+  
+}

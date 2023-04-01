@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <!--Metadata-->
+      <meta charset="UTF-8">
+      <meta name="description" content="News App UIX">
+      <meta name="keywords" content="UIX, layout, training, mobile">
+      <meta name="author" content="Fabio Oliveira">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> News App UIX - Favorite Screen</title>
+      <!--External links-->
+      <link rel="stylesheet" href="assets/styles/style.css">
+    </head>
+    <body>
+      <!--Header-->
+      <header class="header" id="home">
+        <img class="header__favorite__profile-img" src="assets/images/profile-picture.png" alt="Profile picture">
+        <button class="header__notification-btn">
+          <img class="header__notification-icon" src="assets/images/notification-badged.svg" alt="Notification button">
+        </button>
+      </header>
+      <main>
+        <!--Favorite section-->
+        <section class="main__favorite__content" id="favorite">
+          <h1 class="main__favorite__title">Favorite</h1>
+          <div class="main__favorite__subtitle">
+            <h2 class="main__favorite__subtitle__title">Popular</h2>
+            <img class="main__favorite__subtitle__play-icon" src="assets/images/play-icon.svg" alt="Play icon">
+          </div>
+          <ul>
+            <li class="main__favorite__item">
+              <img class="main__favorite__item__img" src="assets/images/favorite-image-01.png" alt="Color illustrated image">
+              <div class="main__favorite__item__content">
+                <div class="main__favorite__item__author-info">
+                  <img class="main__favorite__item__author-small-img" src="assets/images/author-profile-01.png" alt="Jesse Snyder's profile picture">
+                  <h3 class="main__favorite__item__author-name">Jesse Snyder</h3>
+                  <h3 class="main__favorite__item__video-duration">35 min</h3>
+                </div>
+                <a class="main__favorite__item__video-title" href="#">The Power of Art &amp; Illustration in Modern Day...</a>
+                <p class="main__favorite__item__video-text">Illustration</p>
+              </div>
+            </li>
+            <li class="main__favorite__item">
+              <img class="main__favorite__item__img" src="assets/images/favorite-image-02.png" alt="">
+              <div class="main__favorite__item__content">
+                <div class="main__favorite__item__author-info">
+                  <img class="main__favorite__item__author-small-img" src="assets/images/author-profile-02.png" alt="Brandon Black's profile picture">
+                  <h3 class="main__favorite__item__author-name">Brandon Black</h3>
+                  <h3 class="main__favorite__item__video-duration">54 min</h3>
+                </div>
+                <a class="main__favorite__item__video-title" href="#">Traveling Around Food Series by Andrew Nye</a>
+                <p class="main__favorite__item__video-text">Illustration</p>
+              </div>
+            </li>
+          </ul>
+          <div class="main__favorite__subtitle">
+            <h2 class="main__favorite__subtitle__title">Author</h2>
+            <img class="main__favorite__subtitle__play-icon" src="assets/images/play-icon.svg" alt="Play icon">
+          </div>
+          <ul>
+            <li class="main__favorite__author__item">
+              <img class="main__favorite__author__profile-img" src="assets/images/author-01.png" alt="Lottie Ramos profile picture">
+              <div>
+                <h2 class="main__favorite__author__name">Lottie Ramos</h2>
+                <h3 class="main__favorite__author__text">Yandex</h3>
+              </div>
+              <a href="#">
+                <img class="main__favorite__chevron-right-icon" src="assets/images/chevron-right.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+       <!--nav menu-->
+       <nav class="menu">
+        <ul class="menu__content" id="footer__menu">
+          <li>
+            <a class="menu__content__link" href="#home">
+              <img class="menu__content__icon" src="assets/images/home-icon.svg" alt="Home icon">
+              <h2 class="menu__content__title">Home</h2>     
+            </a>
+          </li>
+          <li>
+            <a class="menu__content__link" href="#">
+              <img class="menu__content__icon" src="assets/images/search-alt.svg" alt="Search icon">
+              <h2 class="menu__content__title">Search</h2>
+            </a>
+          </li>
+          <li>
+            <a class="menu__content__link" href="#">
+              <img class="menu__content__icon" src="assets/images/favorite-icon.svg" alt="Favorite icon">
+              <h2 class="menu__content__title">Favorite</h2>
+            </a>
+          </li>
+          <li>
+            <a class="menu__content__link" href="#">
+              <img class="menu__content__icon" src="assets/images/video-icon.svg" alt="Video icon">
+              <h2 class="menu__content__title">Video</h2>
+            </a>
+          </li>
+          <li>
+            <a class="menu__content__link" href="#">
+              <img class="menu__content__icon" src="assets/images/setting-icon.svg" alt="Settings icon">
+              <h2 class="menu__content__title">Setting</h2>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--Scripts-->
+      <script src="assets/scripts/active-nav-menu-items.js"></script>
+      <script src="assets/scripts/active-search-menu-items.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <!--Metadata-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Fast and Digital mobile app design">
+    <meta name="keywords" content="mobile, app, design, layout">
+    <meta name="author" content="Fabio Oliveira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast and Digital mobile app design - Interface layout training</title>
+    <!--External links-->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    </head>
+    <body>
+      <header class="header">
+        <h1 class="header__title">Money flow</h1>
+        <img class="header__btn" src="assets/images/header-menu-icon.svg" alt="Header menu button">
+      </header>
+      <main>
+        <!--Total balance/card number/notification/avatar-->
+        <article class="card">
+          <div class="card__content">
+            <h1 class="card__title">Total balance</h1>
+            <p class="card__balance">24,897</p>
+            <p class="card__number">**** 3567</p>
+            <img class="card__notification-icon" src="assets/images/notification-badged.svg" alt="Notification icon">
+            <img class="card__user-picture" src="assets/images/card-user-picture.png" alt="User picture">
+            <div class="card__currency">
+              <p class="card__currency__title">USD</p>
+              <img class="card__currency__chevron-icon" src="assets/images/chevron-down.svg" alt="Chevron down icon">
+            </div>
+          </div>
+        </article>
+        <!--Statistics bar/money availiable/expenses-->
+        <article class="statistics">
+          <h1 class="statistics__title">Statistics</h1>
+          <div class="statistics__bar">
+            <div></div>
+          </div>
+          <p class="statistics__expenses">$10,597 expenses</p>
+          <p class="statistics__availiable-money">$10.3k</p>
+          <p class="statistics__availiable-money__title">availiable</p>
+        </article>
+        <!--Services(payment/transfers)-->
+        <article class="services">
+          <div class="services__payments">
+            <img class="services__payments__icon" src="assets/images/payment-icon.svg" alt="">
+            <h1 class="services__payments__title">Payments</h1>
+          </div>
+          <div class="services__transfers">
+            <img class="services__transfers__icon" src="assets/images/transfer-icon.svg" alt="">
+            <h1 class="services__transfers__title">Transfers</h1>
+          </div>
+        </article>
+        <!--Recent transactions-->
+        <article class="main__recent-transactions">
+        </article>
+      </main>
+      <!--Navigation menu-->
+      <nav class="menu">
+        <ul class="menu__content">
+          <li class="menu__item"></li>
+          <li class="menu__item"></li>
+          <li class="menu__item"></li>
+          <li class="menu__item"></li>
+        </ul>
+      </nav>
+    </body>
+
+  </html>
+
+
+  <!--DUVIDAS
+  
+  Nome das classes está bom?
+  Fazer tudo com grid ou melhor flex?
+  Elementos estáticos ou responsivos?
+
+  -->

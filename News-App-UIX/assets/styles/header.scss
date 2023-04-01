@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+
+  &__profile-img_container {
+    background-color: rgb(60, 60, 60);
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 55px 0px 10px 35px;
+  }
+
+  &__profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+  }
+
+  &__favorite__profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    margin: 55px 0px 10px 35px;
+  }
+  
+  &__notification-btn {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(20, 18, 18, 0.090);
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 55px 35px 0px 0px;
+  }
+
+  &__notification-icon {
+    width: 20px;
+  }
+}
