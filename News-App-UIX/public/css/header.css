@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between; }
+  .header__profile-img_container {
+    background-color: #3c3c3c;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 55px 0px 10px 35px; }
+  .header__profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px; }
+  .header__favorite__profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    margin: 55px 0px 10px 35px; }
+  .header__notification-btn {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: 1px solid rgba(20, 18, 18, 0.09);
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 55px 35px 0px 0px; }
+  .header__notification-icon {
+    width: 20px; }

@@ -1,0 +1,24 @@
+.menu {
+  padding: 47px 12px 10px 12px;
+  position: sticky;
+  bottom: 0;
+  background-color: white; }
+  .menu__content {
+    display: flex;
+    justify-content: space-evenly; }
+    .menu__content__link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0.3; }
+    .menu__content__icon {
+      width: 17px; }
+    .menu__content__title {
+      line-height: 2;
+      margin-top: 8px;
+      font-size: 0.8rem; }
+
+.active {
+  opacity: 1;
+  color: white; }
