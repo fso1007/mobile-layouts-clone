@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-size: 100%; }
+
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.2em 1.5em; }
+  .header__title {
+    font-size: 1.6rem; }
+  .header__btn {
+    width: 25px; }
+
+.card {
+  background-color: black;
+  margin: 2em auto;
+  border-radius: 15px;
+  width: 330px; }
+  .card__content {
+    display: grid;
+    margin: 2em;
+    grid-template-columns: 90px 90px 50px 50px;
+    grid-template-rows: 75px 70px 75px;
+    grid-template-areas: "title title notification picture" "balance balance . ." "number number currency currency"; }
+  .card__title {
+    color: #9c9c9c;
+    font-size: 1.1rem;
+    grid-area: title;
+    align-self: flex-end;
+    margin-bottom: .5em; }
+  .card__balance {
+    color: white;
+    font-size: 3rem;
+    grid-area: balance; }
+  .card__number {
+    color: #9c9c9c;
+    font-size: 1.3rem;
+    grid-area: number;
+    align-self: center;
+    margin-bottom: 1em; }
+  .card__notification-icon {
+    width: 25px;
+    grid-area: notification;
+    align-self: flex-end;
+    margin: 0 0 .5em .5em; }
+  .card__user-picture {
+    width: 50px;
+    height: 50px;
+    border: 2px dashed #9c9c9c;
+    border-radius: 50%;
+    padding: 6px;
+    grid-area: picture;
+    align-self: flex-end; }
+  .card__currency {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 1.5em;
+    width: 90px;
+    height: 35px;
+    background-color: #f0c34a;
+    border-radius: 20px;
+    grid-area: currency; }
+    .card__currency__title {
+      font-size: .9rem;
+      font-weight: 600; }
+    .card__currency__chevron-icon {
+      width: 15px; }
+
+.statistics {
+  display: grid;
+  margin: 2em auto;
+  width: 330px;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-areas: "title title ." "bar bar availiable-money" "expenses expenses availiable-title"; }
+  .statistics__title {
+    font-size: 1.2rem;
+    grid-area: title; }
+  .statistics__bar {
+    grid-area: bar;
+    align-self: center;
+    width: 220px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: #f0eeee; }
+    .statistics__bar > div {
+      height: 16px;
+      width: 100px;
+      border-radius: 10px 0 0 10px;
+      background-image: linear-gradient(to right, #fac534, #fa6e6e);
+      background-size: 100px; }
+  .statistics__availiable-money {
+    font-weight: 800;
+    font-size: 1.5rem;
+    grid-area: availiable-money; }
+    .statistics__availiable-money__title {
+      grid-area: availiable-title;
+      margin-top: .3em; }
+  .statistics__expenses {
+    font-size: 1.1rem;
+    grid-area: expenses;
+    margin-top: .3em; }
+
+.services {
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: auto auto; }
+  .services__payments__icon {
+    width: 40px; }
+  .services__transfers__icon {
+    width: 40px; }
