@@ -53,6 +53,7 @@
   &__user-picture {
     width: 50px;
     height: 50px;
+    object-fit: cover;
     border: 2px dashed rgb(156, 156, 156);
     border-radius: 50%;
     padding: 6px;
@@ -85,8 +86,7 @@
   }
 }
 
-// Statistics section
-
+// STATISTICS SECTION 
 .statistics {
   display: grid;
   margin: 2em auto;
@@ -124,10 +124,12 @@
     font-weight: 800;
     font-size: 1.5rem;
     grid-area: availiable-money;
+    
 
     &__title {
       grid-area: availiable-title;
       margin-top: .3em;
+      justify-self: center;
     }
   }
 
@@ -138,23 +140,80 @@
   }
 }
 
-// Services section
+// SERVICES SECTION
 .services {
-  margin: 1.5em;
+  margin: 2.5em 1.4em;
   display: grid;
+  grid-template-rows: auto auto;
   grid-template-columns: auto auto;
+  column-gap: .7em;
+  grid-template-areas: 
+  "title icon"
+  "payments transfers";
 
+  &__title {
+    font-size: 1.6rem;
+    margin-bottom: .8em;
+  }
+
+  &__chevron-icon {
+    width: 30px;
+    grid-area: icon;
+    justify-self: flex-end;
+   
+  }
+  
+  // SERVICES (PAYMENTS)
   &__payments {
+    grid-area: payments;
+    border: 2px solid rgb(240, 238, 238);
+    border-radius: 15px;
+    padding: 1em;
 
     &__icon {
       width: 40px;
+    }
+
+    &__title {
+      margin-top: .5em;
     }
   }
 
+  // SERVICES (TRANSFERS)
   &__transfers {
+    grid-area: transfers;
+    border: 2px solid rgb(240, 238, 238);
+    border-radius: 15px;
+    padding: 1em;
 
     &__icon {
       width: 40px;
     }
+
+    &__title {
+      margin-top: .5em;
+    }
+  }
+}
+
+// RECENT TRANSACTIONS
+.recent-transactions {
+  margin: 0em 1.4em;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto;
+
+  &__title {
+    font-size: 1.6rem;
+    margin-bottom: 1em;
+    grid-column: 1 / 4;
+  }
+
+  &__user-picture {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-self: center;
   }
 }

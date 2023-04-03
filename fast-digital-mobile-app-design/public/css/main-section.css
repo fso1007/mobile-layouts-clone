@@ -33,6 +33,7 @@
   .card__user-picture {
     width: 50px;
     height: 50px;
+    object-fit: cover;
     border: 2px dashed #9c9c9c;
     border-radius: 50%;
     padding: 6px;
@@ -83,17 +84,58 @@
     grid-area: availiable-money; }
     .statistics__availiable-money__title {
       grid-area: availiable-title;
-      margin-top: .3em; }
+      margin-top: .3em;
+      justify-self: center; }
   .statistics__expenses {
     font-size: 1.1rem;
     grid-area: expenses;
     margin-top: .3em; }
 
 .services {
-  margin: 1.5em;
+  margin: 2.5em 1.4em;
   display: grid;
-  grid-template-columns: auto auto; }
-  .services__payments__icon {
-    width: 40px; }
-  .services__transfers__icon {
-    width: 40px; }
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  column-gap: .7em;
+  grid-template-areas: "title icon" "payments transfers"; }
+  .services__title {
+    font-size: 1.6rem;
+    margin-bottom: .8em; }
+  .services__chevron-icon {
+    width: 30px;
+    grid-area: icon;
+    justify-self: flex-end; }
+  .services__payments {
+    grid-area: payments;
+    border: 2px solid #f0eeee;
+    border-radius: 15px;
+    padding: 1em; }
+    .services__payments__icon {
+      width: 40px; }
+    .services__payments__title {
+      margin-top: .5em; }
+  .services__transfers {
+    grid-area: transfers;
+    border: 2px solid #f0eeee;
+    border-radius: 15px;
+    padding: 1em; }
+    .services__transfers__icon {
+      width: 40px; }
+    .services__transfers__title {
+      margin-top: .5em; }
+
+.recent-transactions {
+  margin: 0em 1.4em;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto; }
+  .recent-transactions__title {
+    font-size: 1.6rem;
+    margin-bottom: 1em;
+    grid-column: 1 / 4; }
+  .recent-transactions__user-picture {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-self: center; }
