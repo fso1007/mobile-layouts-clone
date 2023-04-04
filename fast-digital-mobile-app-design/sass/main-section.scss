@@ -1,17 +1,17 @@
 
 .card {
-  background-color: rgb(0, 0, 0);
-  margin: 2em auto;
   border-radius: 15px;
-  width: 330px;
- 
+  background-color: rgb(0, 0, 0);
+  margin: 0 2em;
+  
   
   &__content {
     display: grid;
-    margin: 2em;
-   
-    grid-template-columns: 90px 90px 50px 50px;
-    grid-template-rows: 75px 70px 75px;
+    margin: 0px 20px 0px 30px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 65px 50px auto;
+    //grid-template-columns: 80px 80px 50px 50px;
+    //grid-template-rows: 70px 60px 70px;
     grid-template-areas:
       "title title notification picture"
       "balance balance . ."
@@ -20,33 +20,42 @@
 
   &__title {
     color: rgb(156, 156, 156);
-    font-size: 1.1rem;
+    font-size: .9rem;
+    font-weight: 500;
     grid-area: title;
     align-self: flex-end;
-    margin-bottom: .5em;
   }
   
   &__balance {
     color: rgb(255, 255, 255);
-    font-size: 3rem;
+    font-size: 2.3rem;
+    font-weight: 600;
     grid-area: balance;
+    margin: 5px 0 10px 0;
   }
 
   &__number {
     color: rgb(156, 156, 156);
-    font-size: 1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
     grid-area: number;
-    align-self: center;
-    margin-bottom: 1em;
- 
-  
+    margin-bottom: 35px;
+    margin-top: 20px;
+
+    &-hide {
+      position: relative;
+      top: 9px;
+      margin-right: .2em;
+      font-size: 1.6rem;
+    }
   }
 
   &__notification-icon {
     width: 25px;
     grid-area: notification;
     align-self: flex-end;
-    margin: 0 0 .5em .5em;
+    justify-self: flex-end;
+    margin-left: 25px;
 
   }
 
@@ -58,7 +67,7 @@
     border-radius: 50%;
     padding: 6px;
     grid-area: picture;
-    align-self: flex-end;
+    margin: 25px 0 0 20px;
 
   }
 
@@ -66,17 +75,18 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    align-self: center;
-    margin-bottom: 1.5em;
-    width: 90px;
-    height: 35px;
+    margin: 0 0 .5em 1em;
+    width: 87px;
+    height: 32px;
     background-color: rgb(240, 195, 74);
     border-radius: 20px;
     grid-area: currency;
+    justify-self: center;
+    align-self: center;
     
     &__title {
       font-size: .9rem;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     &__chevron-icon {
@@ -89,8 +99,7 @@
 // STATISTICS SECTION 
 .statistics {
   display: grid;
-  margin: 2em auto;
-  width: 330px;
+  margin: 2em;
   grid-template-columns: 3fr 1fr 1fr;
   grid-template-areas: 
   "title title ."
@@ -98,21 +107,22 @@
   "expenses expenses availiable-title";
 
   &__title {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
     grid-area: title;
   }
 
   &__bar {
     grid-area: bar;
     align-self: center;
-    width: 220px;
-    height: 16px;
+    width: 215px;
+    height: 14px;
     border-radius: 10px;
     background-color: rgb(240, 238, 238);
 
     & > div {
-      height: 16px;
-      width: 100px;
+      height: 14px;
+      width: 90px;
       border-radius: 10px 0 0 10px;
       background-image: linear-gradient(to right, rgb(250, 197, 52), rgb(250, 110, 110));
       background-size: 100px;
@@ -122,19 +132,25 @@
 
   &__availiable-money {
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    justify-self: center;
     grid-area: availiable-money;
     
 
     &__title {
+      font-size: 1rem;
+      font-weight: 500;
       grid-area: availiable-title;
       margin-top: .3em;
       justify-self: center;
+      color: rgb(156, 156, 156);
     }
   }
 
   &__expenses {
-    font-size: 1.1rem;
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgb(156, 156, 156);
     grid-area: expenses;
     margin-top: .3em;
   }
@@ -142,7 +158,7 @@
 
 // SERVICES SECTION
 .services {
-  margin: 2.5em 1.4em;
+  margin: 2.5em 2em;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
@@ -152,7 +168,8 @@
   "payments transfers";
 
   &__title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 900;
     margin-bottom: .8em;
   }
 
@@ -198,14 +215,16 @@
 
 // RECENT TRANSACTIONS
 .recent-transactions {
-  margin: 0em 1.4em;
+  margin: 0em 2em;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
 
   &__title {
-    font-size: 1.6rem;
-    margin-bottom: 1em;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: .8em;
     grid-column: 1 / 4;
   }
 
@@ -214,6 +233,7 @@
     height: 60px;
     object-fit: cover;
     border-radius: 50%;
-    justify-self: center;
+  
+   
   }
 }

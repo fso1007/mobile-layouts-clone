@@ -9,7 +9,8 @@
   text-decoration: 0;
   list-style: none;
   scroll-behavior: smooth;
-  font-size: 100%; }
+  font-size: 100%;
+  font-family: 'Montserrat', sans-serif; }
 
 *::after,
 *::before {
