@@ -1,0 +1,16 @@
+.menu {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white; }
+  .menu__content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly; }
+  .menu__item {
+    margin: 2em 0; }
+  .menu__link {
+    padding: 1em; }
+  .menu__icon {
+    width: 22px; }

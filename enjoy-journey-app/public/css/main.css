@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-size: 100%;
+  font-family: 'Montserrat', sans-serif; }
+
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+body {
+  background-color: #f9f5f2; }
+
+.header {
+  display: grid;
+  grid-template-columns: 22% auto auto;
+  margin: 2em; }
+  .header__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; }
+  .header__text-top {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #161616; }
+  .header__text-bottom {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #161616; }
+  .header__notification-icon {
+    width: 22px;
+    justify-self: flex-end;
+    align-self: center; }
+
+.main__route {
+  display: grid;
+  margin: 0em 2em;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "title title title" "img text-div icon-div" "img text-div icon-div" "img text-div icon-div"; }
+  .main__route__title {
+    font-size: 1.4em;
+    margin-bottom: .8em;
+    grid-area: title; }
+  .main__route__img {
+    width: 15px;
+    padding: 1px;
+    grid-area: img;
+    justify-self: center; }
+  .main__route__location {
+    grid-area: text-div;
+    justify-self: flex-end; }
+    .main__route__location-title {
+      font-size: .8rem;
+      font-weight: 700;
+      color: #161616; }
+    .main__route__location-text {
+      font-size: .8rem;
+      margin-top: .4em;
+      color: #161616; }
+      .main__route__location-text::after {
+        content: "";
+        border-bottom: 1px solid #c3dbe7;
+        padding-bottom: 1.2em;
+        display: block;
+        position: relative;
+        width: 180px; }
+  .main__route__destination-title {
+    font-size: .8rem;
+    color: #161616;
+    padding-top: 1.2em;
+    font-weight: 700; }
+  .main__route__destination-text {
+    font-size: .8rem;
+    margin-top: .4em;
+    color: #161616; }
+  .main__route__close-icon {
+    width: 25px;
+    align-self: center; }
+  .main__route__revert-icon {
+    width: 18px;
+    align-self: center;
+    justify-self: center; }
+  .main__route__icons {
+    display: grid;
+    grid-template-columns: auto;
+    grid-area: icon-div;
+    justify-self: flex-end; }
+
+.main__wishes {
+  margin: 2em 0em 2em 2em; }
+  .main__wishes__title {
+    font-size: 1.4em;
+    margin-bottom: 1.2em; }
+  .main__wishes__card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 41%);
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 150px; }
+    .main__wishes__card-list::-webkit-scrollbar {
+      display: none; }
+  .main__wishes__card {
+    height: 130px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: grid; }
+    .main__wishes__card-icon {
+      width: 35px;
+      margin: 1em;
+      padding: 8px;
+      border-radius: 8px;
+      background-color: #c3dbe7; }
+    .main__wishes__card-title {
+      font-size: .7em;
+      font-weight: 600;
+      margin: 0em 1.2em;
+      align-self: center; }
+    .main__wishes__card-text {
+      font-size: .7em;
+      margin: 0 1em .5em 1.2em; }
+
+.main__driver__title {
+  font-size: 1.4em; }
+
+.menu {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white; }
+  .menu__content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly; }
+  .menu__item {
+    margin: 2em 0; }
+  .menu__link {
+    padding: 1em; }
+  .menu__icon {
+    width: 22px; }
