@@ -54,13 +54,13 @@
     justify-self: flex-end; }
 
 .main__wishes {
-  margin: 2em 0em 2em 2em; }
+  margin: 2em 0em 1em 2em; }
   .main__wishes__title {
     font-size: 1.4em;
     margin-bottom: 1.2em; }
   .main__wishes__card-list {
     display: grid;
-    grid-template-columns: repeat(4, 41%);
+    grid-template-columns: repeat(4, 43%);
     gap: 12px;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -87,5 +87,35 @@
       font-size: .7em;
       margin: 0 1em .5em 1.2em; }
 
-.main__driver__title {
-  font-size: 1.4em; }
+.main__driver {
+  margin: 0em 2em; }
+  .main__driver__title {
+    font-size: 1.4em;
+    margin-bottom: .5em; }
+  .main__driver__profile {
+    display: grid;
+    grid-template-columns: 25% auto auto;
+    background-color: #fff;
+    border-radius: 15px;
+    align-items: center; }
+    .main__driver__profile-img {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 40%;
+      justify-self: center; }
+    .main__driver__profile-title {
+      font-size: .8rem;
+      font-weight: 600;
+      color: #8197a1;
+      margin-bottom: .3em; }
+    .main__driver__profile-text {
+      font-size: .8rem;
+      font-weight: 500; }
+    .main__driver__profile-icon {
+      width: 35px;
+      margin: 1em;
+      padding: 9px;
+      border-radius: 8px;
+      background-color: #c3dbe7;
+      justify-self: flex-end; }

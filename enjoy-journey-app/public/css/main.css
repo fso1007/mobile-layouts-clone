@@ -22,11 +22,11 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 22% auto auto;
-  margin: 2em; }
+  grid-template-columns: 20% auto auto;
+  margin: 2em 2em 1.6em 2em; }
   .header__img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover; }
   .header__text-top {
@@ -98,13 +98,13 @@ body {
     justify-self: flex-end; }
 
 .main__wishes {
-  margin: 2em 0em 2em 2em; }
+  margin: 2em 0em 1em 2em; }
   .main__wishes__title {
     font-size: 1.4em;
     margin-bottom: 1.2em; }
   .main__wishes__card-list {
     display: grid;
-    grid-template-columns: repeat(4, 41%);
+    grid-template-columns: repeat(4, 43%);
     gap: 12px;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -131,22 +131,62 @@ body {
       font-size: .7em;
       margin: 0 1em .5em 1.2em; }
 
-.main__driver__title {
-  font-size: 1.4em; }
+.main__driver {
+  margin: 0em 2em; }
+  .main__driver__title {
+    font-size: 1.4em;
+    margin-bottom: .5em; }
+  .main__driver__profile {
+    display: grid;
+    grid-template-columns: 25% auto auto;
+    background-color: #fff;
+    border-radius: 15px;
+    align-items: center; }
+    .main__driver__profile-img {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 40%;
+      justify-self: center; }
+    .main__driver__profile-title {
+      font-size: .8rem;
+      font-weight: 600;
+      color: #8197a1;
+      margin-bottom: .3em; }
+    .main__driver__profile-text {
+      font-size: .8rem;
+      font-weight: 500; }
+    .main__driver__profile-icon {
+      width: 35px;
+      margin: 1em;
+      padding: 9px;
+      border-radius: 8px;
+      background-color: #c3dbe7;
+      justify-self: flex-end; }
 
 .menu {
   position: sticky;
   bottom: 0;
-  right: 0;
   left: 0;
-  background-color: white; }
+  right: 0;
+  background-color: #fff;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px; }
   .menu__content {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-evenly; }
+    grid-template-columns: auto auto auto;
+    justify-items: center; }
   .menu__item {
-    margin: 2em 0; }
+    margin: .6em 0 1.2em 0; }
   .menu__link {
-    padding: 1em; }
+    padding: 1em;
+    color: #8197a1;
+    display: flex;
+    flex-direction: column; }
+    .menu__link > h1 {
+      font-size: .7rem;
+      font-weight: 500; }
   .menu__icon {
-    width: 22px; }
+    width: 18px;
+    height: 18px;
+    margin: .3em auto; }

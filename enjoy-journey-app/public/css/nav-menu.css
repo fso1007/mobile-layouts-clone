@@ -1,16 +1,26 @@
 .menu {
   position: sticky;
   bottom: 0;
-  right: 0;
   left: 0;
-  background-color: white; }
+  right: 0;
+  background-color: #fff;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px; }
   .menu__content {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-evenly; }
+    grid-template-columns: auto auto auto;
+    justify-items: center; }
   .menu__item {
-    margin: 2em 0; }
+    margin: .6em 0 1.2em 0; }
   .menu__link {
-    padding: 1em; }
+    padding: 1em;
+    color: #8197a1;
+    display: flex;
+    flex-direction: column; }
+    .menu__link > h1 {
+      font-size: .7rem;
+      font-weight: 500; }
   .menu__icon {
-    width: 22px; }
+    width: 18px;
+    height: 18px;
+    margin: .3em auto; }
