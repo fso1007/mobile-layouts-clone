@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w sass -o public/css"
+    "sass": "node-sass -w sass -o public/css",
+    "live-server" : "live-server public --port=3000 --no-browser"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "node-sass": "^8.0.0"
   }
 }
